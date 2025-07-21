@@ -5,15 +5,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Beranda from "./pages/Beranda/Beranda";
 const router = createBrowserRouter([
   {
     path: "/",
 
-    element: <div className="bg-primary">Hello world!</div>,
+    element: <Beranda />,
   },
   {
-    path:'/custom', 
-    element: <div>Custom 1</div>
+    path:'/fraud',
+    element : <div>Fraud</div>
+
   }
 ]);
 
