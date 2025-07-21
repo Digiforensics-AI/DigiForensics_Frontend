@@ -1,7 +1,12 @@
 import React from 'react'
 
-export default function TitleDescription() {
+export default function Title({mini_title, title, description1, description2}) {
   return (
-    <div>TitleDescription</div>
+    <>
+    <p3>{mini_title}</p3>
+    <h1>{title}</h1>
+    <p>{description1}</p>
+    <p>{description2}</p>
+    </>
   )
 }
