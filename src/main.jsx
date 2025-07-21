@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Beranda from "./pages/Beranda/Beranda";
+import Kontak from "./pages/kontak/Kontak";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,7 +15,12 @@ const router = createBrowserRouter([
   },
   {
     path:'/fraud',
-    element : <div>Fraud</div>
+    element : <div>Fraud</div>,
+
+  },
+  {
+    path:'/kontak',
+    element : <Kontak />,
 
   }
 ]);
