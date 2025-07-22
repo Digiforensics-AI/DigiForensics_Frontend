@@ -1,7 +1,12 @@
 import React from 'react'
-
-export default function CustomButton() {
+import { Link } from 'react-router';
+export default function CustomButton({to, name, className}) {
   return (
-    <div>CustomButton</div>
+    <>
+  <Link className={className} to={to}>
+  {name}
+  </Link>
+
+    </>
   )
 }
