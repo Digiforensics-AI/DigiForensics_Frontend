@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Image({src, alt}) {
+export default function Image({src, alt, width, height}) {
   return (
     <>
-     <img src={src} alt={alt} /> 
+     <img src={src} alt={alt} width={width} height={height} /> 
     </>
   )
 }
