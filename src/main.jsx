@@ -5,12 +5,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Beranda from "./pages/Beranda/Beranda";
+import Beranda from "./pages/beranda/Beranda";
 import Kontak from "./pages/kontak/Kontak";
+import ErrorCustom from "./pages/errorcustom/ErrorCustom";
 const router = createBrowserRouter([
   {
     path: "/",
-
     element: <Beranda />,
   },
   {
@@ -21,6 +21,11 @@ const router = createBrowserRouter([
   {
     path:'/kontak',
     element : <Kontak />,
+
+  },
+  {
+    path:'/errorcustom',
+    element : <ErrorCustom />,
 
   }
 ]);
