@@ -1,0 +1,31 @@
+// 1. Required Bootstrap functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Override default variables here
+$primary: #4F46E5; // override di awal sebelum variables.scss diimpor
+
+// 3. Import required Bootstrap files (order penting)
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+// 4. Optional: override $theme-colors jika perlu
+$theme-colors: map-merge($theme-colors, (
+  "primary": $primary
+));
+
+// 5. Import the rest
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+
+// 6. Final
+@import "../node_modules/bootstrap/scss/utilities/api";
+@import "../node_modules/bootstrap/scss/bootstrap";

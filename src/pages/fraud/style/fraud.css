@@ -1,0 +1,16 @@
+
+.fraud {
+  margin: 50px 100px 50px 100px;
+}
+#data-terlapor, #data-pelapor {
+  background-color: #F6F6FE;
+  padding: 40px 30px 30px 20px;
+}
+input[type="file"]::file-selector-button {
+  content: "Unggah Gambar"; /* tidak semua browser mendukung */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}

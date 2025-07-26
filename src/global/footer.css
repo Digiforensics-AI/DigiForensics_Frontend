@@ -1,0 +1,13 @@
+.footer {
+
+  width: 100%;
+  margin-top: 150px;
+  text-align: start;
+position: sticky;
+  top: 100%;
+  padding: 60px 100px 32px 100px;
+  background-color: white;
+}
+.footer-top {
+  margin-bottom: 120px;
+}

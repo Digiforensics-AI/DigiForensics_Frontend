@@ -1,0 +1,108 @@
+.card {
+    border: none !important;
+}
+.faq-container {
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.faq-title h2 {
+color: var(--Neutral-500, #15181E);
+/* Heading/H1/Regular */
+font-family: "Plus Jakarta Sans";
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 62px; /* 129.167% */
+letter-spacing: -0.96px;
+}
+
+/* Default accordion button styling */
+.accordion-button {
+  background-color: transparent; /* Ensure transparency */
+  color: #535a73;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-item {
+  border: none !important;
+  margin-bottom: 20px; /* Space between accordion items */
+}
+.accordion-item:focus {
+  box-shadow: none !important; /* Remove focus shadow */
+  border:none !important; /* Remove border on focus */
+}
+/* Styling for collapsed (inactive) accordion button */
+.accordion-button.collapsed {
+  background-color: transparent; /* Ensure transparency */
+  color: #15181e;
+  border: none !important;
+}
+
+/* Icon for collapsed (inactive) accordion button */
+.accordion-button.collapsed::after {
+  content: "";
+  background-image: url("../../../assets/in_active.png"); /* Path to inactive icon */
+  background-repeat: no-repeat;
+  background-size: 48px;
+  background-position: center;
+  width: 48px;
+  height: 48px;
+}
+
+/* Styling for expanded (active) accordion button */
+.accordion-button:not(.collapsed) {
+  background-color: transparent; /* Ensure transparency */
+  color: #15181e;
+  border: none !important;
+}
+
+/* Icon for expanded (active) accordion button */
+.accordion-button:not(.collapsed)::after {
+  content: "";
+  background-image: url("../../../assets/active.png"); /* Path to active icon */
+  background-repeat: no-repeat;
+  background-size: 48px;
+  background-position: center;
+  width: 48px;
+  height: 48px;
+  transform: rotate(360deg); /* Rotate the icon downward */
+}
+.accordion-header {
+  border: none !important;
+}
+
+.accordion-body {
+  font-size: 16px;
+  color: #747c9b;
+  line-height: 1.5;
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 768px) {
+  .faq-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .faq-title h2 {
+    font-size: 32px; /* Adjust font size for smaller screens */
+    line-height: 42px; /* Adjust line height */
+  }
+
+  .accordion-button {
+    font-size: 16px; /* Adjust font size for accordion buttons */
+  }
+
+  .accordion-body {
+    font-size: 14px; /* Adjust font size for accordion body */
+    line-height: 1.4; /* Adjust line height */
+  }
+}

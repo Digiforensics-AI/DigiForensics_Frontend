@@ -4,29 +4,57 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { initSatellite } from "@junobuild/core";
+
+// Polyfill untuk global
+window.global = window;
+
+import '../css/custom.css';
+import './index.css';
 import Beranda from "./pages/Beranda/Beranda";
 import Kontak from "./pages/kontak/Kontak";
-const router = createBrowserRouter([
-  {
-    path: "/",
+import Feature from "./pages/feature/Feature";
+import Fraud from "./pages/fraud/Fraud";
+import FAQ from "./pages/faq/FAQ";
+import ResultFraud from "./pages/result_fraud/ResultFraud";
 
-    element: <Beranda />,
-  },
-  {
-    path:'/fraud',
-    element : <div>Fraud</div>,
+const initializeApp = async () => {
+  await initSatellite({
+    satelliteId: "7suu2-zyaaa-aaaal-asivq-cai",
+  });
 
-  },
-  {
-    path:'/kontak',
-    element : <Kontak />,
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Beranda />,
+    },
+    {
+      path: '/fraud',
+      element: <Fraud />,
+    },
+    {
+      path: '/kontak',
+      element: <Kontak />,
+    },
+    {
+      path: '/feature',
+      element: <Feature />,
+    },
+    {
+      path: '/faq',
+      element: <FAQ />,
+    },
+     {
+      path: '/result-fraud',
+      element: <ResultFraud />,
+    },
+  ]);
 
-  }
-]);
+  ReactDOM.createRoot(document.getElementById("root")).render(
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  );
+};
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
-);
+initializeApp();

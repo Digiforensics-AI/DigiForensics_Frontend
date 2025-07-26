@@ -1,0 +1,27 @@
+.result-fraud {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 80px;
+}
+.result-fraud h1 {
+  margin-bottom: 50px;
+}
+#identitas h3, #jaringan h3, #validitas h3{
+font-family: "Plus Jakarta Sans";
+font-size: 24px;
+letter-spacing: -0.48px;
+font-style: normal;
+font-weight: 600;
+line-height: 31px; /* 129.167% */
+margin-top: 20px;
+}
+#identitas p , #jaringan p, #validitas p {
+  color: var(--Neutral-300, #747C9B);
+/* Paragraph/P2/Regular */
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 23px; /* 127.778% */
+letter-spacing: -0.36px;
+}

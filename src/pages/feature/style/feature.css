@@ -1,0 +1,287 @@
+#content {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#features {
+  margin-top: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#title-description h1 {
+  color: var(--Neutral-500, #15181E);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 62px; /* 129.167% */
+  letter-spacing: -0.96px;
+}
+
+#title-description p {
+  color: var(--Neutral-300, #747C9B);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 130% */
+  letter-spacing: -0.4px;
+}
+
+#fraud-detection {
+  border-radius: 4px;
+  border: 0px solid var(--Neutral-400, #535A73);
+  background: var(--Secondary-50, #EDF4FF);
+  padding: 20px 24px 20px 24px;
+}
+
+#fraud-detection img {
+  height: 438px;
+  width: 692px;
+}
+
+#fraud-detection h4 {
+  color: var(--Neutral-400, #535A73);
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  
+  line-height: 31px; /* 129.167% */
+  letter-spacing: -0.48px;
+}
+.features-pola-hubungan h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#fraud-detection p {
+  color: var(--Neutral-300, #747C9B);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 127.778% */
+  letter-spacing: -0.36px;
+}
+
+#security {
+  margin-top: 30px;
+  padding: 100px;
+  background: var(--Secondary-50, #EDF4FF);
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#security img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 28px;
+}
+
+#security h1 {
+  color: var(--Neutral-500, #15181E);
+  font-family: "Plus Jakarta Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px; /* 130% */
+  letter-spacing: -0.8px;
+  margin-bottom: 40px;
+}
+
+#security h3 {
+  color: var(--Neutral-400, #535A73);
+  margin-bottom: 30px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 128.571% */
+  letter-spacing: -0.56px;
+}
+
+#security p {
+  color: var(--Neutral-300, #747C9B);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 131.25% */
+  letter-spacing: -0.32px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  #content {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  #features {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  #title-description h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  #title-description p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #fraud-detection img {
+    height: 350px;
+    width: 550px;
+  }
+
+  #fraud-detection h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #fraud-detection p {
+    font-size: 16px;
+  
+
+    line-height: 21px;
+  }
+
+  #security {
+    padding: 50px;
+  }
+
+  #security h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  #security h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  #security p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #features {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #title-description h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #title-description p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  #fraud-detection img {
+    height: 250px;
+    width: 400px;
+  }
+
+  #fraud-detection h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #fraud-detection p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  #security {
+    padding: 30px;
+  }
+
+  #security h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  #security h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #security p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  #content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #features {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #title-description h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  #title-description p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  #fraud-detection img {
+    height: 200px;
+    width: 300px;
+  }
+
+  #fraud-detection h4 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  #fraud-detection p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  #security {
+    padding: 20px;
+  }
+
+  #security h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #security h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #security p {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+
