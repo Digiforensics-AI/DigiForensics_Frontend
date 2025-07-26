@@ -1,6 +1,6 @@
 import React from "react";
 import TitleDescription from "./components/TitleDescription";
-import Result from "../../assets/result.png";
+import Result from "../../assets/result.jpeg";
 import "./style/feature.css";
 import { Col, Row } from "react-bootstrap";
 import PolaHubungan from "../../assets/pola_hubungan.png";

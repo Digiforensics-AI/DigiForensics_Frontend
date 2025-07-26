@@ -42,8 +42,8 @@ export default function Footer() { return (
           <h5>Admin</h5>
           <ol className="list-unstyled">
             <li>
-              <a href="#" className="text-dark text-decoration-none">
-                404
+              <a href="/admin" className="text-dark text-decoration-none">
+                Beranda Admin
               </a>
             </li>
             

@@ -35,29 +35,38 @@ export default function ResultFraud() {
     ([key]) => key !== "temuan_utama" && key !== "id"
   ).length;
 
-  const sectionData = [
-    {
-      id: "validitas",
-      imgSrc: Validitas,
-      title: "Validitas Informasi",
-      description: "Informasi ini tidak dapat diverifikasi sumbernya. Disebutkan terkait Shopee, namun tidak ditemukan di kanal resmi yang bersangkutan.",
-      validitas: kesimpulan.validitas_informasi,
-    },
-    {
-      id: "identitas",
-      imgSrc: Identitas,
-      title: "Identitas Akun",
-      description: "Akun ini terindikasi menggunakan identitas yang pernah dilaporkan sebagai penipu.",
-      validitas: kesimpulan.identitas_akun,
-    },
-    {
-      id: "jaringan",
-      imgSrc: Jaringan,
-      title: "Jaringan Akun",
-      description: "Akun ini terindikasi memiliki keterkaitan dengan akun yang teridentifikasi sebagai penipu atau tidak memiliki hubungan dengan akun resmi terkait.",
-      validitas: kesimpulan.jaringan_akun,
-    },
-  ];
+const sectionData = [
+  {
+    id: "validitas",
+    imgSrc: Validitas,
+    title: "Validitas Informasi",
+    description:
+      kesimpulan.validitas_informasi === "FRAUD"
+        ? "Informasi yang dibagikan tidak dapat diverifikasi kebenarannya. Terdapat penyebutan terkait Shopee, namun belum ditemukan pada sumber resmi terkait."
+        : "Belum ditemukan indikasi bahwa informasi ini berasal dari sumber yang tidak valid.",
+    validitas: kesimpulan.validitas_informasi,
+  },
+  {
+    id: "identitas",
+    imgSrc: Identitas,
+    title: "Identitas Akun",
+    description:
+      kesimpulan.identitas_akun === "FRAUD"
+        ? "Akun ini memiliki kemiripan dengan identitas yang sebelumnya pernah dikaitkan dengan aktivitas mencurigakan atau pelaporan penipuan."
+        : "Belum ditemukan indikasi penyalahgunaan identitas pada akun ini.",
+    validitas: kesimpulan.identitas_akun,
+  },
+  {
+    id: "jaringan",
+    imgSrc: Jaringan,
+    title: "Jaringan Akun",
+    description:
+      kesimpulan.jaringan_akun === "FRAUD"
+        ? "Akun ini memiliki keterkaitan dengan akun lain yang sebelumnya telah teridentifikasi sebagai tidak resmi atau berisiko tinggi."
+        : "Tidak terdeteksi adanya keterkaitan akun dengan jaringan yang terindikasi berisiko.",
+    validitas: kesimpulan.jaringan_akun,
+  },
+];
 
   return (
     <>

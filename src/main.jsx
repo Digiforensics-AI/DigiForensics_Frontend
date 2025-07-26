@@ -17,6 +17,7 @@ import Feature from "./pages/feature/Feature";
 import Fraud from "./pages/fraud/Fraud";
 import FAQ from "./pages/faq/FAQ";
 import ResultFraud from "./pages/result_fraud/ResultFraud";
+import AdminBeranda from "./pages/admin/Beranda/Beranda";
 
 const initializeApp = async () => {
   await initSatellite({
@@ -47,6 +48,10 @@ const initializeApp = async () => {
      {
       path: '/result-fraud',
       element: <ResultFraud />,
+    },
+     {
+      path: '/admin/',
+      element: <AdminBeranda />,
     },
   ]);
 

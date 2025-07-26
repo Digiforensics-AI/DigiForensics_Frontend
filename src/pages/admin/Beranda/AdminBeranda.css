@@ -1,0 +1,158 @@
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#nav {
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+  padding-top: 21px !important;
+  padding-bottom: 22px !important;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 150px; /* this needs to be bigger than footer height */
+}
+
+#content {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#content img {
+  margin-bottom: 30px; /* Adds space below the image */
+  max-width: 100%;
+  height: auto;
+}
+
+#content h1 {
+  margin-top: 20px; /* Adds space above the heading */
+  margin-bottom: 20px; /* Adds space below the heading */
+  font-family: "Plus Jakarta Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 62px; /* 129.167% */
+  letter-spacing: -0.96px;
+  width: 992px;
+}
+
+#content p {
+  margin-top: 20px; /* Adds space above the paragraph */
+  margin-bottom: 40px; /* Adjusted space below the paragraph */
+  width: 995px;
+  color: var(--Neutral-300, #747C9B);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 131.25% */
+  letter-spacing: -0.32px;
+}
+
+/* Button Styles */
+#content .buttons {
+  margin-top: 30px; /* Adds space above the button container */
+}
+
+#content .buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#content .buttons .btn-primary {
+  background-color: #6c63ff;
+  color: white;
+}
+
+#content .buttons .btn-secondary {
+  background-color: #000;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  #nav {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  #content h1 {
+    font-size: 36px;
+    line-height: 48px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #content p {
+    font-size: 14px;
+    line-height: 18px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  #content {
+    margin-top: 100px;
+  }
+
+  #content h1 {
+    font-size: 28px;
+    line-height: 36px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #content p {
+    font-size: 12px;
+    line-height: 16px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #nav {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  #content {
+    margin-top: 80px;
+  }
+
+  #content h1 {
+    font-size: 24px;
+    line-height: 32px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #content p {
+    font-size: 10px;
+    line-height: 14px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
